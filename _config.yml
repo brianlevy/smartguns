@@ -1,0 +1,32 @@
+# Site settings
+title: Smartguns
+name: 
+email: info@smartguns.us
+description: > # this means to ignore newlines until "baseurl:"
+   
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://smartguns.us" # the base hostname & protocol for your site
+keywords: 
+host: 0.0.0.0
+# twitter_username: 
+#instagram_username: 
+#linkedin_username: 
+#github_username:  
+proj-imgpath: /img/
+permalink: /:categories/:title
+
+# Build settings
+source: "src"
+destination: "docs"
+markdown: kramdown
+exclude: [
+	.gitignore,
+	svg-icons,
+	svg-decorations,
+	scss,
+	.sass-cache,
+	package.json,
+	Gruntfile.js,
+	node_modules,
+	readme.md
+]
