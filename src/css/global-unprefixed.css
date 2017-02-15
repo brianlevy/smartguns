@@ -213,6 +213,16 @@ pre > code {
   display: block;
   font-size: 1.333333em;
 }
+@media (min-width: 600px) {
+  .page-header h1 {
+    font-size: 1.875em;
+  }
+}
+@media (min-width: 900px) {
+  .page-header h1 {
+    font-size: 2.25em;
+  }
+}
 
 .intro {
   text-align: center;
