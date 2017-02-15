@@ -3,3 +3,108 @@
     margin: 0 auto;
     padding: 0;
 }
+.page-header {
+    position: relative;
+    width: 100%;
+    height: 240px;
+    color: $color-white;
+    background-image: url("../img/header-bg-2.png");
+    background-repeat: no-repeat;
+    background-color: $brand-color;
+    background-position: center top; 
+    background-size: 200%;
+    text-align: center;
+    @include for-tablet-portrait-up {
+        background-size: 150%;
+    }
+    @include for-tablet-landscape-up {
+        background-size: 100%;
+    }
+    
+
+    h1 {
+        position: absolute;
+        bottom: 1em;
+        left: 12px;
+        right: 12px;
+        font-size: 1.5rem;
+        line-height: 1.25em;
+        em {
+            display: block;
+            font-size: 1.333333em;
+        }
+    }
+}
+.intro {
+    text-align: center;
+    background-color: $brand-color;
+    color: $color-white;
+    p {
+        font-size: 1.125em;
+    }
+}
+section {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    h2, p, ul {
+        margin-left: 12px;
+        margin-right: 12px;
+        @include for-tablet-portrait-up {
+            width: 90%;
+            margin: 0 auto;
+            max-width: 768px;
+        }
+    }
+    h2 {
+        color: $brand-color;
+    }
+    p {
+
+    }
+    &.rfid {
+        background-color: rgba($brand-color, 0.1)
+    }
+    &.laws {
+        background-color: $brand-color;
+        color: $color-white;
+        h2 {
+            color: $color-white;
+        }
+    }
+    ul {
+        font-family: $base-font-family;
+
+        h3 {
+            font-family: $base-font-family;   
+            font-weight: 700;
+            margin-bottom: 0;
+            line-height: 1.11em;
+        }
+    }
+    li {
+        list-style-type: none;
+        margin-bottom: 12px;
+    }
+}
+cite {
+    line-height: 1.125em;
+}
+section header {
+    text-align: center;
+}
+.icon-wrap {
+    width: 100%;
+    text-align: center;
+}
+.icon {
+    margin: 0 auto;
+    height: 66px;
+    /*&.gun {
+        height: 66px;
+    }*/
+    &.scale {
+        path, use {
+        fill: $color-white;
+        }
+    }
+}
