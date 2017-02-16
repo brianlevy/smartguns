@@ -46,18 +46,19 @@
     background-color: $brand-color;
     color: $color-white;
     p {
-        font-size: 1.125em;
+        font-size: 1.25em;
     }
 }
 section {
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     h2, p, ul {
         margin-left: 12px;
         margin-right: 12px;
         @include for-tablet-portrait-up {
             width: 90%;
             margin: 0 auto;
+            margin-bottom: .333em;
             max-width: 768px;
         }
     }
@@ -104,7 +105,8 @@ section header {
 }
 .icon {
     margin: 0 auto;
-    height: 66px;
+    height: 4.125em;
+    margin-bottom: 1.25em;
     /*&.gun {
         height: 66px;
     }*/
@@ -112,5 +114,9 @@ section header {
         path, use {
         fill: $color-white;
         }
+    }
+    @include for-tablet-landscape-up {
+        height: 6.25em;
+        margin-bottom: 1.5em;
     }
 }

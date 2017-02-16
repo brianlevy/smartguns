@@ -97,6 +97,12 @@ h1, h2, h3, h4, h5, h6 {
 
 h2 {
   font-size: 1.5em;
+  line-height: 1.2em;
+}
+@media (min-width: 900px) {
+  h2 {
+    font-size: 2em;
+  }
 }
 
 h3 {
@@ -230,12 +236,12 @@ pre > code {
   color: #ffffff;
 }
 .intro p {
-  font-size: 1.125em;
+  font-size: 1.25em;
 }
 
 section {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 section h2, section p, section ul {
   margin-left: 12px;
@@ -245,6 +251,7 @@ section h2, section p, section ul {
   section h2, section p, section ul {
     width: 90%;
     margin: 0 auto;
+    margin-bottom: .333em;
     max-width: 768px;
   }
 }
@@ -290,11 +297,18 @@ section header {
 
 .icon {
   margin: 0 auto;
-  height: 66px
+  height: 4.125em;
+  margin-bottom: 1.25em
   /*&.gun {
       height: 66px;
   }*/
 }
 .icon.scale path, .icon.scale use {
   fill: #ffffff;
+}
+@media (min-width: 900px) {
+  .icon {
+    height: 6.25em;
+    margin-bottom: 1.5em;
+  }
 }

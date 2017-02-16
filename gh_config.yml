@@ -4,7 +4,7 @@ name:
 email: info@smartguns.us
 description: > # this means to ignore newlines until "baseurl:"
    
-baseurl: "" # the subpath of your site, e.g. /blog/
+baseurl: "/smartguns" # the subpath of your site, e.g. /blog/
 url: "http://smartguns.us" # the base hostname & protocol for your site
 keywords: 
 host: 0.0.0.0

@@ -52,6 +52,9 @@ module.exports = function(grunt) {
       },
       jekyllBuild: {
         command: "jekyll build --config _config.yml"
+      },
+      jekyllBuildGH: {
+        command: "jekyll build --config gh_config.yml"
       }
     },
 
@@ -115,5 +118,6 @@ module.exports = function(grunt) {
   //grunt.registerTask("imagemin", ["imagemin"]);
   grunt.registerTask("serve", ["shell:jekyllServe"]);
   grunt.registerTask("default", ["uglify", "sass", "autoprefixer", "svgstore", "shell:jekyllBuild", "watch"]);
+  grunt.registerTask("build-gh", ["shell:jekyllBuildGH"]);
 
 };
